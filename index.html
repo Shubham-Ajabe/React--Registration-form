@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Table + Detail View</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
+
+  <link rel="stylesheet" href="style.css">
+  <Script src="student.js"></Script>
+  
+</head>
+
+<body background="IMG.png">
+  <h1>
+  Registration Form 
+</h1>
+<style>
+  h1{text-align: center;}
+
+ </style>
+<h4>
+( Data is displayed after clicking the ADD button) 
+</h4>
+<style>
+  h4{text-align: center;}
+
+ </style>
+<main>
+  <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <td><input type="text" name="name" id="name"></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Address</th>
+        <td><input type="text" name="address" id="address"></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td><input type="text" name="email" id="email"></td>
+      </tr>
+      <tr>
+        <th>skill</th>
+        <td><input type="text" name="skills" id="skills"></td>
+      </tr>
+
+      <tr>
+        <th>gender</th>
+        <td>
+          <select onchange="myFunction(event)" name="gendr" class="nofocus" id=gender required>
+          <option value="other"> select</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          </select>
+          <input type="hidden" id="printGender" style="color:#000">
+        </td>
+      </tr>
+      <tr>
+        <th>stream</th>
+        <td><input type="text" name="stream" id="stream"></td>
+      </tr>
+      <tr>
+				
+				<tr id="btna">
+					<td colspan="8"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+				</tr>
+      </thead>
+      </tbody>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>  
+    <br>
+     <table border="1" id="show"; style="border:1px solid black;margin-left:auto;margin-right:auto;">
+			<thead>
+				<tr>
+					<th>name</th>
+					<th>address</th>
+					<th>email</th>
+					<th>skills</th>
+					<th>gender</th>
+					<th>stream</th>
+				</tr>
+			</thead>
+		</center>
+    </table>
+	
+
+ 
+
+
+</body>
+
+<div id="footer" > Developed by Ajabe Shubham. All rights reserved</p> </div>
+</html>
